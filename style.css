@@ -200,3 +200,132 @@ section{ padding: 12rem 6% 6rem }
   .home-img{ order:-1; justify-self:center; width:min(58vw, 420px); margin-top:5rem }
   .social-icons{ justify-content:flex-start }
 }
+
+.heading{
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.education{
+  padding: 100px 15px;
+  background: var(--second-bg-color);
+}
+
+:root {
+  --main-color: var(--baby-2);
+  --bg-color: var(--panel);
+  --second-bg-color: var(--bg);
+}
+
+.education {
+  padding: 100px 6%;
+  background: var(--second-bg-color);
+}
+
+.education h2 {
+  margin-bottom: 5rem;
+}
+
+.timeline-items {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2.5px);
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  box-shadow: 0 0 20px var(--glow);
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 10.5px); 
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  box-shadow: 
+    0 0 25px var(--main-color),
+    0 0 50px var(--main-color);
+  z-index: 1;
+}
+
+.timeline-date {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.timeline-content {
+  background-color: var(--bg-color);
+  border: 2px solid var(--main-color);
+  padding: 24px 32px;
+  border-radius: 2.4rem;
+  box-shadow: 0 0 12px var(--main-color);
+  display: inline-block;
+  max-width: 460px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.timeline-content p {
+  font-size: 1.5rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 820px) {
+  .timeline-items::before {
+    left: 16px;
+  }
+  .timeline-dot {
+    left: 6px;
+  }
+  .timeline-item {
+    padding: 0 0 0 48px !important;
+    text-align: left !important;
+  }
+  .timeline-content {
+    max-width: 100%;
+    width: 100%;
+  }
+}
