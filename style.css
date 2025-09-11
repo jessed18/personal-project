@@ -167,9 +167,9 @@ section{ padding: 12rem 6% 6rem }
 }
 @keyframes words{
   0%, 20%   { content:"Software Developer"; }
-  25%, 45%  { content:"Frontend Engineer"; }
-  50%, 70%  { content:"UI • UX tinkerer"; }
-  75%, 95%  { content:"Creative Coder"; }
+  25%, 45%  { content:"System Builder"; }
+  50%, 70%  { content:"Product Creator"; }
+  75%, 95%  { content:"Visioneer"; }
   100%      { content:"Software Developer"; }
 }
 @keyframes blink{ 50%{ opacity:0 } }
