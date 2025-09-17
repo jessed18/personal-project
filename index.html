@@ -14,9 +14,9 @@
     <nav class="main-nav">
       <a href="#" class="active">Home</a>
       <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
     <button class="nav-toggle" aria-label="Open menu">
@@ -131,9 +131,10 @@
         <div class="timeline-content">
           <h3>Co-Founder and Developer @ Kavess</h3>
           <ul>
-            <li>Active member of a cappella group Isang Himig.</li>
-            <li>Served as Isang Imig Intern where I helped with MuseScore - a software for creating sheet music.</li>
-            <li>Spent the last year as Alto Section Leader where I helped prepare alto members learn music they intend on performing.</li>
+            <li>Co-developed an AI-powered fashion chatbot that used user input and contextual cues to generate outfit recommendations.</li>
+            <li>Built early ML prototypes using TensorFlow and Python; experimented with style prediction models and adjusted system logic based
+on user testing.</li>
+
           </ul>
         </div>
       </div>
@@ -186,34 +187,55 @@
     </div>
   </section>
 
+   <section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <img src="kavess.jpeg" alt="Screenshot of Project 1">
+    <div class="project-content">
+      <h3>Kavess</h3>
+      <p>A personal stylist chatbot and e-commerce integration built for fashion customers.</p>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="nar.jpeg" alt="Screenshot of Project 2">
+    <div class="project-content">
+      <h3>Native Animal Rescue</h3>
+      <p>A volunteer management app for a nonprofit wildlife organization.</p>
+    </div>
+  </div>
+
+
   <section id="contact"></section>
-  <section class = "contact" id = "contact">
-    <h2 class = "heading">Contact <span>Me</span></h2>
-  </section>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
 
-      <form action="">
-        <div class = "input-group">
-          <div class = "input-box">
-            <input type = "text"
-            placeholder = "Full Name">
-            <input type = "email"
-            placeholder = "Email">
-          </div>
-          <div class = "input-box">
-             <input type = "number"
-              placeholder = "Phone Number">
-              <input type = "text"
-               placeholder = "Subject">
-          </div>
-        </div>
+  <form action="">
+    <div class="input-group">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+      </div>
+      <div class="input-box">
+        <input type="email" placeholder="Email">
+      </div>
+    </div>
 
-        <div class="input-group-2">
-          <textarea name="" id="" cols = "30"
-          rows = "10" placeholder = "Your Message"></textarea>
-            <input type = "submit" value = "Send Message" class = "btn">
-        </div>
-      </form>
-    </section>
+    <div class="input-group">
+      <div class="input-box">
+        <input type="number" placeholder="Phone Number">
+      </div>
+      <div class="input-box">
+        <input type="text" placeholder="Subject">
+      </div>
+    </div>
+
+    <textarea placeholder="Your Message"></textarea>
+
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
 
     <footer class="footer">
       <div class = "social">
