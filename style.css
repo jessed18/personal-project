@@ -26,7 +26,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
 .site-header {
   position: fixed; inset: 0 0 auto 0;
   display: flex; align-items: center; justify-content: space-between;
@@ -323,7 +322,6 @@ section { padding: 12rem 6% 6rem; }
   .clamp-3 p { -webkit-line-clamp: unset; overflow: visible; display: block; }
 }
 
-/* Projects */
 .projects {
   background-color: var(--second-bg-color);
   padding: 8rem 6%;
@@ -336,20 +334,6 @@ section { padding: 12rem 6% 6rem; }
   color: var(--baby);
 }
 
-/* Grid layout */
-.projects {
-  background-color: var(--second-bg-color);
-  padding: 8rem 6%;
-}
-
-.projects h2 {
-  font-size: 5rem;
-  margin-bottom: 4rem;
-  color: var(--baby);
-  text-align: center;
-}
-
-/* Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -374,15 +358,14 @@ section { padding: 12rem 6% 6rem; }
 
 .project img {
   width: 100%;
-  max-height: 240px; /* keeps things consistent without hard cropping */
-  object-fit: contain; /* shows the whole image */
-  background-color: #0c1116; /* fills behind transparent areas */
+  max-height: 240px;
+  object-fit: contain;
+  background-color: #0c1116;
   border-bottom: 2px solid var(--main-color);
 }
 
-
 .project-content {
-  flex: 1; /* makes cards equal height */
+  flex: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -401,9 +384,6 @@ section { padding: 12rem 6% 6rem; }
   line-height: 1.6;
 }
 
-
-
-./* Contact */
 .contact {
   background-color: var(--second-bg-color);
   padding: 8rem 6%;
@@ -477,7 +457,6 @@ section { padding: 12rem 6% 6rem; }
   box-shadow: 0 0 36px var(--glow);
 }
 
-
 .footer{
   position: relative;
   bottom: 0;
@@ -503,7 +482,7 @@ section { padding: 12rem 6% 6rem; }
   text-align: center;
   border-radius: 50%;
   margin: 0 10px;
-  transition: 0.3 ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .footer .social a:hover{
