@@ -23,7 +23,7 @@ This is my personal portfolio website showcasing my background, education, profe
    git clone <repo-url>
    cd portfolio
 
-# Potential Improvements
+## Potential Improvements
 - **Add more projects with links to demos or repos**
 - **Include an interactive element like a carousel for projects**
 - **Build out a blog/updates section to share new work**
