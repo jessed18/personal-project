@@ -338,8 +338,21 @@ section { padding: 12rem 6% 6rem; }
 
 /* Grid layout */
 .projects {
+  background-color: var(--second-bg-color);
+  padding: 8rem 6%;
+}
+
+.projects h2 {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  color: var(--baby);
+  text-align: center;
+}
+
+/* Grid */
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 3rem;
 }
 
@@ -350,7 +363,8 @@ section { padding: 12rem 6% 6rem; }
   overflow: hidden;
   box-shadow: 0 0 12px var(--glow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .project:hover {
@@ -360,14 +374,19 @@ section { padding: 12rem 6% 6rem; }
 
 .project img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+  max-height: 240px; /* keeps things consistent without hard cropping */
+  object-fit: contain; /* shows the whole image */
+  background-color: #0c1116; /* fills behind transparent areas */
   border-bottom: 2px solid var(--main-color);
 }
 
+
 .project-content {
+  flex: 1; /* makes cards equal height */
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-content h3 {
