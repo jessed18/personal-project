@@ -3,10 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jesse de Guzman - Software Engineer specializing in full-stack development (React, TypeScript), AI/ML, and building scalable applications. UC Santa Cruz CS graduate." />
+  <meta name="keywords" content="Software Engineer, Full-Stack Developer, React, TypeScript, AI, Machine Learning, Python, JavaScript, Web Developer" />
+  <meta name="author" content="Jesse de Guzman" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jesse de Guzman • Software Engineer Portfolio" />
+  <meta property="og:description" content="Software Engineer specializing in full-stack development, AI/ML, and building scalable applications." />
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Jesse de Guzman • Software Engineer Portfolio" />
+  <meta property="twitter:description" content="Software Engineer specializing in full-stack development, AI/ML, and building scalable applications." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
-  <title>Jesse de Guzman • Portfolio</title>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <title>Jesse de Guzman • Software Engineer Portfolio</title>
 </head>
 <body>
 
@@ -16,6 +28,8 @@
       <a href="#home" class="active">Home</a>
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#tech-stack">Tech Stack</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -25,17 +39,27 @@
   </header>
 
   <section class="home" id="home">
+    <div class="code-decoration" aria-hidden="true">
+      <div class="code-line">const developer = {</div>
+      <div class="code-line">  name: 'Jesse',</div>
+      <div class="code-line">  role: 'Software Engineer',</div>
+      <div class="code-line">  skills: ['React', 'TypeScript', 'AI/ML']</div>
+      <div class="code-line">};</div>
+    </div>
     <div class="home-content">
-      <h2 class="eyebrow">Hi, it’s <span class="accent">Jesse</span></h2>
-      <h1 class="headline">I’m a <span class="typing-text"><span></span></span></h1>
+      <h2 class="eyebrow">Hi, it's <span class="accent">Jesse</span></h2>
+      <h1 class="headline">I'm a <span class="typing-text"><span></span></span></h1>
       <p class="subcopy">
-        Software Engineer | Building with Purpose.
+        I turn ideas into code. Full-stack engineer who builds with React, TypeScript, and AI/ML.
       </p>
       <div class="social-icons">
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jesse-de-guzman-300288220/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/jessed18" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
       </div>
-      <a href="#contact" class="btn">Hire me</a>
+      <div style="display: flex; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap;">
+        <a href="#contact" class="btn">Hire me</a>
+        <a href="#projects" class="btn" style="background: transparent; border: 2px solid var(--baby-2); color: var(--baby-2);">View Projects</a>
+      </div>
     </div> 
     <div class="home-img">
       <div class="img-ring"></div>
@@ -62,7 +86,7 @@
         <div class="timeline-content">
           <h3>University of California, Santa Cruz</h3>
           <ul>
-            <li>Graduated in three years with a Bachelor's in Computer Science, focusing on Python, AI, Machine Learning, and Creative Computing.</li>
+            <li>Graduated in three years with a Bachelor's in Computer Science, focusing on full-stack development (React, TypeScript), as well as machine learning and AI.</li>
           </ul>
         </div>
       </div>
@@ -75,13 +99,11 @@
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2025 – Present</div>
+        <div class="timeline-date">October 2025 – Present</div>
         <div class="timeline-content">
-          <h3>Self-Directed Training - ERP & SuiteScript</h3>
+          <h3>Mathematics Instructor @ Descartes Learning Club</h3>
           <ul>
-            <li>Developing a strong foundation in ERP architecture and NetSuite customization.</li>
-            <li>Engaging with Oracle's CSADP track through mentorship and interviews with consultants.</li>
-            <li>Translating complex workflows into optimized processes across finance, ops, and data.</li>
+            <li>Teach advanced mathematics to K-8 students in a specialized tutoring program.</li>
           </ul>
         </div>
       </div>
@@ -103,22 +125,9 @@
         <div class="timeline-content">
           <h3>Development Instructor (Roblox/Lua, HTML/CSS)</h3>
           <ul>
-            <li>Taught Lua scripting and game dev at SiliconValley4U’s program.</li>
+            <li>Taught Lua scripting and game dev at SiliconValley4U's program.</li>
             <li>Covered variables, conditionals, and event-driven logic.</li>
             <li>Guided students through building interactive games from scratch.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">September 2023 - June 2025</div>
-        <div class="timeline-content">
-          <h3>Bayanihan at UC Santa Cruz</h3>
-          <ul>
-            <li>Active member of a cappella group Isang Himig.</li>
-            <li>Served as Isang Imig Intern where I helped with MuseScore - a software for creating sheet music.</li>
-            <li>Spent the last year as Alto Section Leader where I helped prepare alto members learn music they intend on performing.</li>
           </ul>
         </div>
       </div>
@@ -183,54 +192,245 @@
     </div>
   </section>
 
+  <section id="skills" class="skills">
+    <h2 class="heading">Skills & Certifications</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3>ERP & SuiteScript</h3>
+        <p class="skill-type">Self-Directed Training</p>
+        <ul>
+          <li>Developing a strong foundation in ERP architecture and NetSuite customization</li>
+          <li>Engaging with Oracle's CSADP track through mentorship and interviews with consultants</li>
+          <li>Translating complex workflows into optimized processes across finance, ops, and data</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <h3>Oracle Cloud Infrastructure 2025 AI Foundations Associate</h3>
+        <p class="skill-type">Certificate • October 2025</p>
+        <p>Certified in Oracle Cloud Infrastructure AI foundations, demonstrating expertise in cloud-based AI solutions and infrastructure.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3>Software Engineering (Quickstart)</h3>
+        <p class="skill-type">UC Santa Barbara • November 2025</p>
+        <p>Completed intensive software engineering program covering modern development practices, tools, and methodologies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech-stack" class="tech-stack">
+    <h2 class="heading">Tech Stack</h2>
+    <div class="tech-container">
+      <div class="tech-category">
+        <h3>Frontend</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">HTML/CSS</span>
+          <span class="tech-tag">SCSS</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Backend & Full-Stack</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">Express</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>AI & Machine Learning</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">TensorFlow</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">ML Models</span>
+          <span class="tech-tag">AI Integration</span>
+        </div>
+      </div>
+      <div class="tech-category">
+        <h3>Tools & Platforms</h3>
+        <div class="tech-tags">
+          <span class="tech-tag">Git/GitHub</span>
+          <span class="tech-tag">NetSuite</span>
+          <span class="tech-tag">SuiteScript</span>
+          <span class="tech-tag">Oracle Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="projects" class="projects">
     <h2 class="heading">Projects</h2>
     <div class="projects-grid">
       <div class="project">
-        <img src="kavess.jpeg" alt="Screenshot of Kavess Project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-robot" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
         <div class="project-content">
           <h3>Kavess</h3>
-          <p>A personal stylist chatbot and e-commerce integration built for fashion customers.</p>
+          <p>An AI-powered fashion chatbot that analyzes user preferences and contextual information to provide personalized outfit recommendations.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Python</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#TensorFlow</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#AI/ML</span>
+          </div>
+          <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
+            <i class="fa-solid fa-lock"></i> Private repository
+          </div>
         </div>
       </div>
       <div class="project">
-        <img src="nar.jpeg" alt="Screenshot of Native Animal Rescue Project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-paw" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
         <div class="project-content">
           <h3>Native Animal Rescue</h3>
-          <p>A volunteer management app for a nonprofit wildlife organization.</p>
+          <p>A volunteer management app for a nonprofit wildlife organization that enables volunteers to efficiently log and track their service hours.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Mobile App</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Nonprofit</span>
+          </div>
+          <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
+            <i class="fa-solid fa-lock"></i> Private repository
+          </div>
         </div>
+      </div>
+      <div class="project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
+        <div class="project-content">
+          <h3>LMVagueness</h3>
+          <p>An AI prompt quality checker that scores prompts from 0-100 based on clarity, context, constraints, and completeness. Like a spell-checker but for AI instructions. Built collaboratively with a partner.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#AI Tools</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Chrome Extension</span>
+          </div>
+          <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
+            <i class="fa-solid fa-users"></i> Collaborative project
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-gift" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
+        <div class="project-content">
+          <h3>Celebrity GIF Generator</h3>
+          <p>Interactive web app that allows users to quickly generate GIFs of selected celebrities using a dropdown menu and one-click search. Features responsive grid layout and smooth animations.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#JavaScript</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#HTML/CSS</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#API Integration</span>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="https://github.com/jessed18/project2" target="_blank" style="color: var(--baby-2); text-decoration: none; font-size: 1.4rem;">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-tasks" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
+        <div class="project-content">
+          <h3>Doable - Task Management App</h3>
+          <p>A lightweight React-based task manager where you can add, complete, delete, and filter tasks. Includes a contact form and fully responsive design built with React Router.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#TypeScript</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#React Router</span>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="https://github.com/jessed18/project-3" target="_blank" style="color: var(--baby-2); text-decoration: none; font-size: 1.4rem;">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
+          <i class="fa-solid fa-comments" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+        </div>
+        <div class="project-content">
+          <h3>Node.js Q&A Forum</h3>
+          <p>A full-stack question and answer forum built with Node.js, featuring user authentication, question posting, answers, and community interaction features.</p>
+          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Node.js</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Full-Stack</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Authentication</span>
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="https://github.com/jessed18/project4" target="_blank" style="color: var(--baby-2); text-decoration: none; font-size: 1.4rem;">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="miscellaneous" class="miscellaneous">
+    <h2 class="heading">Miscellaneous</h2>
+    <div class="misc-container">
+      <div class="misc-card">
+        <div class="misc-icon">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <h3>Bayanihan at UC Santa Cruz</h3>
+        <p class="misc-date">September 2023 - June 2025</p>
+        <ul>
+          <li>Active member of Isang Himig, a Filipino a cappella group within Bayanihan (UCSC's multicultural organization).</li>
+          <li>Served as Isang Himig Intern where I used MuseScore to create and organize sheet music for the group.</li>
+          <li>Spent my last year as Alto Section Leader, helping prepare alto members learn and perform music for our shows.</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="https://formspree.io/f/FORM_ID" method="POST">
+    <div id="form-message" style="display: none; max-width: 800px; margin: 0 auto 2rem; padding: 1.5rem; border-radius: 1rem; text-align: center; font-size: 1.6rem;"></div>
+    <form id="contact-form">
       <div class="input-group">
         <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
         </div>
         <div class="input-box">
-          <input type="email" name="email" placeholder="Email" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
         </div>
       </div>
       <div class="input-group">
         <div class="input-box">
-          <input type="number" name="phone" placeholder="Phone Number">
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number">
         </div>
         <div class="input-box">
-          <input type="text" name="subject" placeholder="Subject">
+          <input type="text" id="subject" name="subject" placeholder="Subject">
         </div>
       </div>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn">
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn" id="submit-btn">
+        <span id="submit-text">Send Message</span>
+        <span id="submit-loader" style="display: none;"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+      </button>
     </form>
   </section>
 
   <footer class="footer">
     <div class="social">
-      <a href="#">FAQ</a>
-      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jesse-de-guzman-300288220/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/jessed18" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
     </div>
     <ul class="list">
       <li><a href="#contact">Contact Me</a></li>
@@ -240,9 +440,133 @@
 
 
   <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Mobile menu toggle
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav');
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('open'));
+    });
+
+    // Initialize EmailJS
+    // TODO: Replace "YOUR_PUBLIC_KEY" with your EmailJS public key from https://www.emailjs.com/
+    (function() {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+
+    // Contact form handling
+    const contactForm = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+    const submitBtn = document.getElementById('submit-btn');
+    const submitText = document.getElementById('submit-text');
+    const submitLoader = document.getElementById('submit-loader');
+
+    contactForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Show loading state
+      submitText.style.display = 'none';
+      submitLoader.style.display = 'inline';
+      submitBtn.disabled = true;
+      formMessage.style.display = 'none';
+
+      // Get form data
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value || 'Not provided',
+        subject: document.getElementById('subject').value || 'Portfolio Contact',
+        message: document.getElementById('message').value
+      };
+
+      // Check if EmailJS is configured
+      const isEmailJSConfigured = emailjs && 
+                                    typeof emailjs.send === 'function' && 
+                                    'YOUR_SERVICE_ID' !== 'YOUR_SERVICE_ID' &&
+                                    'YOUR_TEMPLATE_ID' !== 'YOUR_TEMPLATE_ID';
+
+      if (isEmailJSConfigured) {
+        try {
+          // Send email using EmailJS
+          await emailjs.send(
+            'YOUR_SERVICE_ID',
+            'YOUR_TEMPLATE_ID',
+            {
+              from_name: formData.name,
+              from_email: formData.email,
+              phone: formData.phone,
+              subject: formData.subject,
+              message: formData.message,
+              to_email: 'your-email@example.com'
+            }
+          );
+
+          // Success message
+          formMessage.style.display = 'block';
+          formMessage.style.background = 'linear-gradient(135deg, rgba(143,213,255,.2), rgba(191,230,255,.15))';
+          formMessage.style.border = '2px solid var(--baby-2)';
+          formMessage.style.color = 'var(--baby-2)';
+          formMessage.innerHTML = '<i class="fa-solid fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+          
+          // Reset form
+          contactForm.reset();
+          
+        } catch (error) {
+          // Error message
+          formMessage.style.display = 'block';
+          formMessage.style.background = 'rgba(255, 0, 0, 0.1)';
+          formMessage.style.border = '2px solid #ff4444';
+          formMessage.style.color = '#ff6666';
+          formMessage.innerHTML = '<i class="fa-solid fa-exclamation-circle"></i> Failed to send message. Please try again or email me directly.';
+          console.error('EmailJS error:', error);
+        }
+      } else {
+        // Fallback to mailto link if EmailJS not configured
+        const subject = encodeURIComponent(formData.subject);
+        const body = encodeURIComponent(
+          `Name: ${formData.name}\n` +
+          `Email: ${formData.email}\n` +
+          `Phone: ${formData.phone}\n\n` +
+          `Message:\n${formData.message}`
+        );
+        const mailtoLink = `mailto:jessedg27@gmail.com?subject=${subject}&body=${body}`;
+        
+        // Show success message first
+        formMessage.style.display = 'block';
+        formMessage.style.background = 'linear-gradient(135deg, rgba(143,213,255,.2), rgba(191,230,255,.15))';
+        formMessage.style.border = '2px solid var(--baby-2)';
+        formMessage.style.color = 'var(--baby-2)';
+        formMessage.innerHTML = '<i class="fa-solid fa-envelope"></i> Opening your email app (Gmail, Mail, etc.) with your message ready to send...';
+        
+        // Open email client
+        setTimeout(() => {
+          window.location.href = mailtoLink;
+        }, 100);
+        
+        // Reset form after a moment
+        setTimeout(() => {
+          contactForm.reset();
+        }, 1000);
+      }
+      
+      // Reset button state
+      submitText.style.display = 'inline';
+      submitLoader.style.display = 'none';
+      submitBtn.disabled = false;
+    });
   </script>
 </body>
 </html>
