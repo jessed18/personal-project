@@ -4,7 +4,7 @@
 This is my personal portfolio website showcasing my background, education, professional experience, and projects. It highlights my skills as a software engineer and provides an easy way for recruiters, employers, and collaborators to get in touch with me.
 
 ## Features & Functionality
-- Responsive navigation bar linking to Home, Education, Experience, Projects, and Contact sections.
+- Responsive navigation bar linking to Home, Education, Experience, Skills, Tech Stack, Projects, and Contact sections.
 - Timeline layout for **Education** and **Experience**, styled with CSS.
 - **Projects section** with screenshots and short descriptions.
 - **Contact form** with required fields (Name, Email, Message) and optional Formspree integration for submissions.
