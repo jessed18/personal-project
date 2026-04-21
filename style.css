@@ -424,11 +424,12 @@ section { padding: 12rem 6% 6rem; }
 .clamp-3 p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 @media (min-width: 821px){
-  .clamp-3 p { -webkit-line-clamp: unset; overflow: visible; display: block; }
+  .clamp-3 p { -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; display: block; }
 }
 
 .skills {
