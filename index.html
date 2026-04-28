@@ -91,8 +91,8 @@
         <div class="timeline-content">
           <h3>Co-Founder & Full-Stack Developer @ Kavess</h3>
           <ul>
-            <li>Built an AI-powered fashion recommendation chatbot using Python and TensorFlow, reducing user search time by 20% and increasing outfit engagement during internal testing.</li>
-            <li>Improved recommendation accuracy by 35% using multi-stage validation logic and context-aware filtering, reducing failure cases by 40%.</li>
+            <li>Co-founded an AI-powered fashion chatbot using Python and TensorFlow that validated and filtered recommendations in multiple stages before surfacing them to users - improving accuracy by 35% and cutting bad recommendations by 40%.</li>
+            <li>Tuned system prompts against real user conversations to handle edge cases and ambiguous style requests, redesigning the conversational flow to reduce user search time by 20%.</li>
           </ul>
         </div>
       </div>
@@ -222,13 +222,15 @@
         </div>
         <div class="project-content">
           <h3>Sectional</h3>
-          <p>Designing an AI-powered voice part isolation tool using React, Flask, and Spleeter to extract individual vocal parts from mixed choral recordings into separate practice tracks. Prototyping a browser-based interface for choir and a cappella singers to select, loop, and adjust isolated parts - informed by 11+ years of choral performance experience.</p>
+          <p>Built a Flask backend that uses the Anthropic Claude API to interpret plain-language voice part requests (e.g., "give me the soprano line"), resolve ambiguous inputs with confidence scoring, and return structured JSON that drives an audio processing pipeline. Created an audio separation pipeline using Demucs (Meta's source separation model), supporting job management, file I/O, and per-stem download endpoints via REST API. Currently building a RAG pipeline to retrieve choir sheet music and voice part annotations from a knowledge base - targeting deployment on AWS Lambda.</p>
           <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Python</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Flask</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#Spleeter</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#AI/ML</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Claude API</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Demucs</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#TypeScript</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#RAG</span>
           </div>
           <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
             <i class="fa-solid fa-hammer"></i> Currently building
@@ -241,10 +243,11 @@
         </div>
         <div class="project-content">
           <h3>Kavess</h3>
-          <p>Co-founded and developed an AI-powered fashion chatbot that utilizes machine learning to analyze user preferences and contextual data, delivering personalized outfit recommendations through intelligent style prediction algorithms.</p>
+          <p>Co-founded an AI-powered fashion chatbot using Python and TensorFlow with multi-stage validation and filtering before surfacing recommendations - improving accuracy by 35% and cutting bad recommendations by 40%. Tuned system prompts against real user conversations to handle edge cases and ambiguous style requests, reducing user search time by 20%.</p>
           <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Python</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#TensorFlow</span>
+            <span style="font-size: 1.2rem; color: var(--baby-2);">#Prompt Engineering</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#AI/ML</span>
           </div>
           <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
@@ -274,7 +277,7 @@
         </div>
         <div class="project-content">
           <h3>LMVagueness</h3>
-          <p>Built a Chrome extension that gives users real-time feedback on AI prompt quality, rendering scores, risk levels, and specific improvement suggestions in a clean, interactive UI. Designed the frontend to display multi-dimensional prompt analysis - including vagueness detection, missing context flags, and quick-fix recommendations - without leaving the browser.</p>
+          <p>Built a Chrome extension that intercepts user prompts to LLMs and surfaces real-time quality analysis - flagging vagueness, risk levels, and missing context before the prompt is sent. Designed an in-tab UI that shows actionable fix suggestions so users can strengthen their prompts without breaking their workflow.</p>
           <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Chrome Extension</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#JavaScript</span>
@@ -294,7 +297,7 @@
         </div>
         <div class="project-content">
           <h3>Vexyn</h3>
-          <p>Built a full-stack Q&A forum using React, Node.js, and MySQL, supporting threaded discussions and content moderation for authenticated user sessions. Secured sessions with bcrypt and express-session, delivering a fully responsive SPA with real-time form validation and role-based access control.</p>
+          <p>Built a full-stack Q&A forum with threaded discussions, moderation tools, and role-based permissions - handling auth with bcrypt-hashed sessions and real-time input validation for the frontend.</p>
           <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
             <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Node.js</span>
