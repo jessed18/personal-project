@@ -28,7 +28,6 @@
       <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
-      <a href="#tech-stack">Tech Stack</a>
       <a href="#projects">Projects</a>
     </nav>
     <button class="nav-toggle" aria-label="Open menu">
@@ -152,14 +151,6 @@
       </div>
       <div class="skill-card">
         <div class="skill-icon">
-          <i class="fa-solid fa-database"></i>
-        </div>
-        <h3>SQL Querying - Advanced</h3>
-        <p class="skill-type">Certstaffix Training • January 2026</p>
-        <p>Advanced SQL querying certification covering complex database operations, optimization techniques, and data manipulation.</p>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
         <h3>Software Engineering (QuickStart)</h3>
@@ -169,60 +160,17 @@
     </div>
   </section>
 
-  <section id="tech-stack" class="tech-stack">
-    <h2 class="heading">Tech Stack</h2>
-    <div class="tech-container">
-      <div class="tech-category">
-        <h3>Frontend</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">TypeScript</span>
-          <span class="tech-tag">JavaScript</span>
-          <span class="tech-tag">HTML/CSS</span>
-          <span class="tech-tag">SCSS</span>
-        </div>
-      </div>
-      <div class="tech-category">
-        <h3>Backend & Full-Stack</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">REST APIs</span>
-          <span class="tech-tag">Express</span>
-        </div>
-      </div>
-      <div class="tech-category">
-        <h3>AI & Machine Learning</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">TensorFlow</span>
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">ML Models</span>
-          <span class="tech-tag">AI Integration</span>
-        </div>
-      </div>
-      <div class="tech-category">
-        <h3>Tools & Platforms</h3>
-        <div class="tech-tags">
-          <span class="tech-tag">Git/GitHub</span>
-          <span class="tech-tag">Oracle Cloud</span>
-          <span class="tech-tag">REST APIs</span>
-          <span class="tech-tag">Chrome Extensions</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="projects" class="projects">
     <h2 class="heading">Projects</h2>
     <div class="projects-grid">
-      <div class="project">
-        <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05)); position: relative;">
-          <span style="position: absolute; top: 1rem; right: 1rem; background: var(--baby-2); color: var(--bg); padding: 0.4rem 1rem; border-radius: 20px; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.5px;">IN PROGRESS</span>
-          <i class="fa-solid fa-music" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
+      <div class="project featured">
+        <div class="featured-image">
+          <img src="sectional-preview.png" alt="Sectional - rehearsal helper interface" />
+          <span class="featured-badge">IN PROGRESS</span>
         </div>
-        <div class="project-content">
+        <div class="project-content featured-content">
           <h3>Sectional</h3>
-          <p>Built a Flask backend that uses the Anthropic Claude API to interpret plain-language voice part requests (e.g., "give me the soprano line"), resolve ambiguous inputs with confidence scoring, and return structured JSON that drives an audio processing pipeline. Created an audio separation pipeline using Demucs (Meta's source separation model), supporting job management, file I/O, and per-stem download endpoints via REST API. Currently building a RAG pipeline to retrieve choir sheet music and voice part annotations from a knowledge base - targeting deployment on AWS Lambda.</p>
+          <p>A practice tool for choirs and a cappella groups. Upload a rehearsal recording, pick your voice part, and hear your line brought forward in the mix. Powered by stem separation, an LLM for natural-language part requests, and frequency-domain post-processing.</p>
           <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Python</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Flask</span>
@@ -230,7 +178,6 @@
             <span style="font-size: 1.2rem; color: var(--baby-2);">#Demucs</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
             <span style="font-size: 1.2rem; color: var(--baby-2);">#TypeScript</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#RAG</span>
           </div>
           <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
             <i class="fa-solid fa-hammer"></i> Currently building
@@ -315,7 +262,10 @@
   </section>
 
   <section id="miscellaneous" class="miscellaneous">
-    <h2 class="heading">Miscellaneous</h2>
+    <h2 class="heading">The Story Behind Sectional</h2>
+    <p style="text-align: center; max-width: 760px; margin: 0 auto 4rem; font-size: 1.6rem; color: var(--muted); line-height: 1.7;">
+      Eleven years in choirs taught me one thing: rehearsal recordings are useless. The basses overpower the altos, the sopranos overpower everyone, you can't isolate your part, and by measure twelve, you've lost your place. I spent a year as an Isang Himig intern wrangling sheet music in MuseScore, another year leading the alto section - trying to teach music my section could barely hear on the reference track. Sectional is what happens when that singer finally learns Flask, Demucs, and the Claude API.
+    </p>
     <div class="misc-container">
       <div class="misc-card">
         <div class="misc-icon">
@@ -326,7 +276,18 @@
         <ul>
           <li>Active member of Isang Himig, a Filipino a cappella group within Bayanihan (UCSC's multicultural organization).</li>
           <li>Served as Isang Himig Intern where I used MuseScore to create and organize sheet music for the group.</li>
-          <li>Spent my last year as Alto Section Leader, helping prepare alto members learn and perform music for our shows.</li>
+          <li>Spent my last year as Alto Section Leader, helping prepare alto members learn and perform music for our shows - the exact use case Sectional is designed for.</li>
+        </ul>
+      </div>
+      <div class="misc-card">
+        <div class="misc-icon">
+          <i class="fa-solid fa-church"></i>
+        </div>
+        <h3>Reign of Heaven Choir</h3>
+        <p class="misc-date">February 2026 - Present</p>
+        <ul>
+          <li>Alto in the adult choir at St. Joseph Parish in Mountain View, CA.</li>
+          <li>Continuing to sing in a section-based ensemble - and continuing to feel the rehearsal pain points Sectional is built to solve.</li>
         </ul>
       </div>
     </div>
