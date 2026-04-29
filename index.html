@@ -162,8 +162,10 @@
 
   <section id="projects" class="projects">
     <h2 class="heading">Projects</h2>
-    <div class="projects-grid">
+
+    <div class="featured-wrapper">
       <div class="project featured">
+        <span class="featured-label">FEATURED PROJECT</span>
         <div class="featured-image">
           <img src="sectional-preview.png" alt="Sectional - rehearsal helper interface" />
           <span class="featured-badge">IN PROGRESS</span>
@@ -171,19 +173,23 @@
         <div class="project-content featured-content">
           <h3>Sectional</h3>
           <p>A practice tool for choirs and a cappella groups. Upload a rehearsal recording, pick your voice part, and hear your line brought forward in the mix. Powered by stem separation, an LLM for natural-language part requests, and frequency-domain post-processing.</p>
-          <div style="margin-top: 1rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#Python</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#Flask</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#Claude API</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#Demucs</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#React</span>
-            <span style="font-size: 1.2rem; color: var(--baby-2);">#TypeScript</span>
+          <div class="featured-tags">
+            <span>#Python</span>
+            <span>#Flask</span>
+            <span>#Claude API</span>
+            <span>#Demucs</span>
+            <span>#React</span>
+            <span>#TypeScript</span>
           </div>
-          <div style="margin-top: 1rem; font-size: 1.3rem; color: var(--muted); font-style: italic;">
+          <div class="featured-status">
             <i class="fa-solid fa-hammer"></i> Currently building
           </div>
         </div>
       </div>
+    </div>
+
+    <h3 class="subheading">Other Work</h3>
+    <div class="projects-grid projects-grid-secondary">
       <div class="project">
         <div class="project-content" style="min-height: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; background: linear-gradient(135deg, rgba(143,213,255,.1), rgba(191,230,255,.05));">
           <i class="fa-solid fa-robot" style="font-size: 4rem; color: var(--baby-2); margin-bottom: 1.5rem;"></i>
