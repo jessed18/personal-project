@@ -815,11 +815,60 @@ section { padding: 12rem 6% 6rem; }
   border-radius: 20px;
 }
 
-.project.featured .featured-status {
+.project.featured .featured-links {
   margin-top: 2.4rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.project.featured .featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 1.8rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 2px solid var(--baby-2);
+  color: var(--baby-2);
+}
+
+.project.featured .featured-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(143,213,255,.25);
+}
+
+.project.featured .featured-link.primary {
+  background: var(--baby-2);
+  color: var(--bg);
+}
+
+.project.featured .featured-link.primary:hover {
+  background: var(--baby);
+  border-color: var(--baby);
+}
+
+.project.featured .featured-status {
+  margin-top: 2rem;
   font-size: 1.5rem;
   color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project.featured .featured-status i {
+  color: var(--baby-2);
+  margin-right: 0.4rem;
+}
+
+.project.featured .featured-note {
+  font-size: 1.2rem;
   font-style: italic;
+  opacity: 0.75;
 }
 
 .project.featured:hover {
