@@ -851,6 +851,22 @@ section { padding: 12rem 6% 6rem; }
   border-color: var(--baby);
 }
 
+.project.featured .featured-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  width: fit-content;
+}
+
+.project.featured .featured-github-link:hover {
+  color: var(--baby-2);
+}
+
 .project.featured .featured-status {
   margin-top: 2rem;
   font-size: 1.5rem;
